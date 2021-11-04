@@ -6,7 +6,7 @@ let bol = false;
 let count;
 
 //Add on scroll event listener
-Window.addEventListener("scroll", () => {
+window.addEventListener("scroll", () => {
     //Run when the scroll offset is 400px and run only once
     if (pageYOffset > container.offsetTop - 400 && bol === false) {
         //Select All Bars
