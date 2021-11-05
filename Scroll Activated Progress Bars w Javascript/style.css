@@ -45,7 +45,7 @@ body {
 
 .progress {
     background: linear-gradient(90deg, #305e9c, #70adff);
-    width: 50%;
+    width: 0%;
     height: 100%;
     border-radius: inherit;
     position: relative;

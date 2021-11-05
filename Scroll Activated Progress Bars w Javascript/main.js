@@ -18,9 +18,9 @@ window.addEventListener("scroll", () => {
             const data = parseInt(progress[i].dataset.count);
 
             //Set the transition duration based on the data value
-            progress[i].style.transition = "width" + (data * 30) + "ms";
+            progress[i].style.transition = "width " + (data * 30) + "ms";
             //Move the progress according to the number in the circle
-            progress[i].style.width = "%";
+            progress[i].style.width = data + "%";
 
             //Function for counting up
             function updateCount() {
@@ -28,7 +28,7 @@ window.addEventListener("scroll", () => {
                 if (count < data) {
                     count++;
                     percentage[i].innerText = count + "%";
-                    setTimeout(updateCount, 50); //Count Speed
+                    setTimeout(updateCount, 40); //Count Speed
                 } else {
                     percentage[i].innerText = data + "%";
                 }

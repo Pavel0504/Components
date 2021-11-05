@@ -77,7 +77,7 @@ function fetchWeatherData() {
     /*Fetch the data and dynamicaly add
     the city name with tempLate LiteraLs*/
     //use your own key
-    fetch('http://api.weatherapi.com/v1/current.json&key= e9fe3d7a71fe42e69e341634210211 = &{cityInput}') //!!!!!!!!!!
+    fetch('http://api.weatherapi.com/v1/current.json?key=50ace9bbcdb24eb5aa1153408210411=&{cityInput}') //!!!!!!!!!!
         /*Take the data (Which is in JSON format)
         and convert it to a regular JS object*/
         .then(response => response.json())
