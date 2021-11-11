@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 1em 0;
+    background: radial-gradient(#333, #111);
+    font-family: Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: url(./background.png) no-repeat;
+    background-position: -1em center;
+    background-size: 110%;
+    width: 43em;
+    min-height: 23em;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+    display: flex;
+}
+
+.card::before {
+    content: "";
+    background: radial-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.71));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card .main-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 22em;
+    filter: drop-shadow(0px 0px 25px #111);
+    transition: 0.3s ease-in-out;
+}
+
+.card .details {
+    box-sizing: border-box;
+    position: relative;
+    width: 50%;
+    padding: 7.5em 2em 2em 2em;
+    height: 23em;
+}
+
+.card .logo {
+    width: 16em;
+    position: absolute;
+    left: -2em;
+    top: -1em;
+}
+
+.card p {
+    font-size: 0.8em;
+    line-height: 23px;
+    color: #a8a8a8;
+}
+
+.card:hover {
+    background-position: 0 center;
+}
+
+.card .image-container {
+    position: relative;
+    width: 50%;
+    height: 23em;
+}
+
+.card:hover .main-image {
+    width: 23em;
+}
+
+.card a {
+    background: #ff3730;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.7em 1.5em;
+    box-shadow: 0px 0px 10px #ff3730;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    margin-right: 0.8em;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background: #fff;
+    color: #ff3730;
+    box-shadow: none;
+}
+
+.card h5 {
+    display: inline-block;
+    border: 1px #ff3730 solid;
+    padding: 0.2em 0.7em;
+}
+
+.card h5 span {
+    font-size: 0.8em;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 1em;
+}
+
+@media screen and (max-width: 670px) {
+    .card {
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        width: 20em;
+    }
+    .card:hover {
+        background-position: center;
+    }
+    .card .main-image {
+        width: 15em;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .card .details,
+    .card .image-container {
+        width: 100%;
+    }
+    .card .image-container {
+        height: 15em;
+    }
+    .card:hover .main-image {
+        width: 15em;
+    }
+}
