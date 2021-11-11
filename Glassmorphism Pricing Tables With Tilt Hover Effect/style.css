@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h3,h4 {
+    margin: 0;
+}
+
+.pricing {
+    min-height: 100vh;
+    background: url(background.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: center;
+}
+
+.table *{
+    box-sizing: border-box;
+}
+
+.table{
+    padding: 1em;
+    margin: 2em;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 16em;
+    border-radius: 30px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.table .price {
+    display: flex;
+    justify-content: center;
+}
+
+.table h1 {
+    font-size: 5em;
+    margin: 0.2em 0 0 0;
+}
+
+.table h1 sup {
+    font-size: 0.5em;
+    font-weight: 400;
+    margin-right: -0.2em;
+}
+
+.table h1 span {
+    font-size: 0.2em;
+    font-weight: 400;
+    margin-left: -1em;
+}
+
+.table h4 {
+    font-weight: 400;
+    color: #ccc;
+}
+
+.table ul {
+    margin: 1em 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.table ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.table ul li:not(:last-child) {
+    border-bottom: 1px #ccc solid;
+}
+
+.table li > div:nth-child(1) {
+    text-align: left;
+}
+
+.table .material-icons-outlined {
+    cursor: pointer;
+}
+
+.table a {
+    display: inline-block;
+    margin: 1em 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.table a:hover {
+    color: #ccc;
+}
+
+.table button {
+    margin: 1em auto 0.5em auto;
+    border: none;
+    border-radius: 2em;
+    padding: 0.5em 1.5em;
+    background: #fff;
+    color: #1f1f1f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
