@@ -9,7 +9,7 @@ h1,h3,h4 {
 
 .pricing {
     min-height: 100vh;
-    background: url(background.jpg) center no-repeat;
+    background: url(./images/background.jpg) center no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;

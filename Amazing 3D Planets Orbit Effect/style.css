@@ -1,5 +1,5 @@
 body {
-    background: url(./space.jpg) center no-repeat;
+    background: url(./images/space.jpg) center no-repeat;
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -10,14 +10,14 @@ body {
 .planet {
     width: 20em;
     height: 20em;
-    background: url(./venus.jpg);
+    background: url(./images/venus.jpg);
     box-shadow: inset -2em -2em 2em #000, -0.5em -0.5em 1em #f0d08b;
     position: relative;
     animation: rotate 10s linear infinite;
 }
 
 .moon {
-    background: url(./mercury.jpg) center no-repeat;
+    background: url(./images/mercury.jpg) center no-repeat;
     box-shadow: inset -1.5em -1.5em 1.5em #000, -0.2em -0.2em 0.5em #ccc;
     width: 6em;
     height: 6em;
