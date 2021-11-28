@@ -215,13 +215,12 @@
 }
 
 .conteiner1 {
-    height: 60em;
-    width: 100%; 
-    background: #0362F9;   
-    text-align: center;
+    height: 40em;
+    background: bottom;
+    background-image: url('./images/background/Rectangle 8.svg');   
 }
 
-.background {
+.Orange-upper-shtuka {
     display: flex;
 }
 
@@ -238,20 +237,20 @@
     height: auto;
 }
 
-.background .hui2 {
+.Orange-upper-shtuka .hui2 {
     width: 21%;
     height: auto;
 }
 
 .text {
     color: white;
+    text-align: center;
 }
 
 .text h1 {
     font-size: 200%;
     font-weight: bold;
     font-style: normal;
-    text-align: center;
     font-family: TT Norms, sans-serif;
     text-transform: uppercase;
 }
@@ -260,7 +259,6 @@
     font-size: 105%;
     font-weight: 500;
     font-style: italic;
-    text-align: center;
     font-family: TT Norms, sans-serif;
 }
 
@@ -268,11 +266,27 @@
     font-size: 70%;
     font-weight: 100;
     font-style: normal;
-    text-align: center;
     font-family: TT Norms, sans-serif;
 }
 
 .t1 {
     background: #448BFB;
     border-radius: 20px;
+}
+
+.conteiner2 {
+    height: 60em;
+    width: 100%;
+    background-color: white;
+}
+
+.conteiner3 {
+    height: 60em;
+    background-image: url('./images/background/Rectangle 9.svg');   
+}
+
+.t {
+    position: absolute;
+    left: 36%;
+    top: 55em;
 }
